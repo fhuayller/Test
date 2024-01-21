@@ -53,20 +53,20 @@ sequelize.models = Object.fromEntries(capsEntries);
 const { Video, Autor, Colaborador, Comentario, Review, Usuario } = sequelize.models;
 
 //relaciones
-Usuario.hasMany(Autor, { foreignKey: 'usuarioId' });
-Usuario.hasMany(Colaborador, { foreignKey: 'usuarioId' });
-Usuario.hasMany(Comentario, { foreignKey: 'usuarioId' });
-Usuario.hasMany(Review, { foreignKey: 'usuarioId' });
+Usuario.hasMany(Autor, { foreignKey: 'usuario_id' });
+Usuario.hasMany(Colaborador, { foreignKey: 'usuario_id' });
+Usuario.hasMany(Comentario, { foreignKey: 'usuario_id' });
+Usuario.hasMany(Review, { foreignKey: 'usuario_id' });
 
-Autor.belongsTo(Usuario, { foreignKey: 'usuarioId' });
-Colaborador.belongsTo(Usuario, { foreignKey: 'usuarioId' });
-Comentario.belongsTo(Usuario, { foreignKey: 'usuarioId' });
-Review.belongsTo(Usuario, { foreignKey: 'usuarioId' });
+Autor.belongsTo(Usuario, { foreignKey: 'usuario_id' });
+Colaborador.belongsTo(Usuario, { foreignKey: 'usuario_id' });
+Comentario.belongsTo(Usuario, { foreignKey: 'usuario_id' });
+Review.belongsTo(Usuario, { foreignKey: 'usuario_id' });
 
-Video.belongsTo(Autor, { foreignKey: 'autorId' });
-Video.belongsTo(Colaborador, { foreignKey: 'colaboradorId' });
-Video.hasMany(Comentario, { foreignKey: 'videoId' });
-Video.hasMany(Review, { foreignKey: 'videoId' });
+Video.belongsTo(Autor, { foreignKey: 'autor_id' });
+Video.belongsTo(Colaborador, { foreignKey: 'colaborador_id' });
+Video.hasMany(Comentario, { foreignKey: 'video_id' });
+Video.hasMany(Review, { foreignKey: 'video_id' });
 
 module.exports = {
   Video,

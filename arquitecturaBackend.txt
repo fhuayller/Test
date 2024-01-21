@@ -1,0 +1,28 @@
+ La estructura del backend para un e-commerce la diseñé con una organización clara y eficiente, tomando en cuenta que ya he realizado un e-commerce. 
+
+Utilizando tecnologías como Node.js con Express, PostgreSQL como base de datos relacional y Sequelize como ORM, esta estructura busca maximizar la modularidad y la 
+escalabilidad del sistema.
+
+Organización de carpetas:
+ La organización y estructura de carpetas estará determinada de la siguiente manera =>
+    -Carpeta controllers: almacena archivos que contienen la lógica para cada entidad de la aplicación, por ejemplo usuarios, productos, etc.
+    -Carpeta handlers: contiene archivos que actúan como manejadores lógicos para cada controlador. Estos manejadores permiten una separación adicional de responsabilidades, manteniendo la lógica del controlador más limpia y modular.
+    -Carpeta models: para los modelos de la base de datos se utilizará Sequelize. Estos modelos presentarán una estructura clara y consistente para la interacción con la base de datos y asi relacionarlos.
+    -Carpeta Routes: aloja archivos que definen las rutas específicas para cada entidad del e-commerce.
+    -Carpeta middlewares: se encuentran archivos que contienen funciones middleware para manejar tareas comunes. Estas tareas incluyen autenticación, validación de datos y gestión de errores.
+    -Carpeta services: contiene archivos que implementan la lógica del e-commerce específica para cada entidad. Estos servicios deberían facilitar la modularización y reutilización de la lógica.
+    -Carpeta database: Aqui adentro se encontrará el archivo db.js, que configura y establece la conexión con la base de datos utilizando Sequelize. A su vez, dentro de database estará la carpeta models para una estructura organizada.
+
+Patrón de diseño:
+ La estructura sigue el patrón de diseño Modelo-Vista-Controlador (MVC). Los modelos representan las entidades de la base de datos, los controladores manejan la lógica de negocio 
+y las rutas definen cómo se accede y manipula la información.
+
+Seguridad:
+ La seguridad se aborda mediante la configuración del servidor para utilizar HTTPS 
+y la implementación de medidas de protección contra ataques de falsificación de solicitudes entre sitios (CSRF)
+
+Para iniciar el servidor del backend:
+ El archivo index.js se encarga de configurar y sincronizar la base de datos antes de iniciar el servidor.
+
+
+Esta estructura permite que el lado del backend sea lo mas eficiente, limpia y escalable que permiten mis conocimientos, por lo que no tengo duda que podrá mejorar a medida que pase el tiempo.

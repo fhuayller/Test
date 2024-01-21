@@ -2,7 +2,7 @@ const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {
   const Video = sequelize.define("Video", {
-    video_id: {
+    videoId: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,

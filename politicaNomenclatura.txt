@@ -1,0 +1,63 @@
+Politica de Nomenclatura
+
+ La consistencia en la nomenclatura es esencial para mejorar la comprensión del código y la colaboración dentro del equipo de desarrollo. 
+A continuación, se detallan las pautas de nomenclatura que deben de seguirse durante el desarrollo.
+
+Bases de datos:
+    Nombre de la base de datos:
+        Utilizar snake_case (minúsculas y separadas por guiones bajos).
+        Preferir nombres descriptivos y concisos.
+
+    Tablas:
+        Utilizar snake_case para el nombre de las tablas.
+        Preferir nombres singulares para estos.
+
+    Columnas:
+        Utilizar snake_case para el nombre de las columnas.
+        Evitar abreviaturas poco claras y preferir nombres descriptivos.
+
+    Claves Primarias y Foráneas:
+        Nombrar las claves primarias como Id (tablaId)
+        Nombrar las claves foráneas con nombre de la tabla referenciada seguido de _id. (ejemplo 'usuario_id' como clave foránea en la tabla 'orden_compra')
+
+Variables y funciones:
+    Variables:
+        Utilizar camelCase (comenzar con minúscula).
+        Nombres descriptivos que reflejen el propósito de la misma.
+    
+    Funciones:
+        Nombres en formato camelCase.
+        Verbos que describan la acción realizada por la función.
+        Ejemplo: 'calcularTotalCompra()', 'obtenerUsuarioPorId()'.
+
+Clases y objetos:
+    Clases:
+        Nombres en formato PascalCase.
+        Descriptivas y centradas en un propósito único.
+        Ejemplo: 'Usuario', 'Producto', 'OrdenCompra'.
+    
+    Objetos:
+        Nombres en formato camelCase.
+        Ejemplo: nuevoUsuario, productoSeleccionado
+
+Git Control de versiones:
+    Branches:
+        Nombres en formato kebab-case.
+        Descriptivos y relacionados con la tarea o característica.
+        Ejemplo: feature/nueva-funcionalidad, bugfix/arreglo-error.
+
+    Commits:
+        Mensajes claros y concisos.
+        Empezar con un verbo en tiempo presente.
+        Ejemplo: "Añadir función de autenticación", "Corregir error en el manejo de productos".
+
+
+Consideraciones a tener en cuenta:
+    Mantener la consistencia en la nomenclatura utilizada en todo el código.
+    Revisar y seguir los estándares existentes antes de agregar nuevos elementos.
+    Incluir documentación clara y concisa para variables, funciones y clases.
+    Usar comentarios para aclarar aspectos complejos o decisiones de diseño.
+    Realizar revisiones de código entre miembros del equipo para garantizar la coherencia en la nomenclatura.
+    Revisar y actualizar la política de nomenclatura periódicamente para reflejar las mejores prácticas y cambios en el equipo.
+
+Nota: antes de empezar, es PRIORIDAD crear una branch de la original y trabajar remotamente desde su propia branch.
