@@ -5,12 +5,14 @@
   "main": "Prueba_1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon index.js",
+    "start:dev": "nodemon index.js"
   },
   "author": "Franci",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.5",
+    "dotenv": "^16.3.2",
     "express": "^4.18.2",
     "nodemon": "^3.0.3",
     "pg": "^8.11.3",

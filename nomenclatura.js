@@ -1,13 +1,13 @@
 //Ejercicio 2: Nomenclatura
 
-function f(x, y, z) {
+function f(x, y, z) { //consigna
     let a = x + y;
     let b = a * z;
     let c = Math.sin(b);
     return c;
 }
 
-function calculo(num1, num2, multiplicador){
+function calculo(num1, num2, multiplicador){ //con nomenclatura
     let suma = num1 + num2;
     let producto = suma * multiplicador;
     let seno = Math.sin(producto);
